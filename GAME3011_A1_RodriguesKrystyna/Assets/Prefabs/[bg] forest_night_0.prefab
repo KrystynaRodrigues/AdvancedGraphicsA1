@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61090837741257010}
   - component: {fileID: 58568401047810694}
   - component: {fileID: 50575413288688844}
+  - component: {fileID: 114801236389035622}
   m_Layer: 0
   m_Name: '[bg] forest_night_0'
   m_TagString: MinVal
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1593972934433720}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6290998, y: 9.847406, z: 0}
+  m_LocalPosition: {x: 1.6290998, y: 9.847406, z: 1}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -115,6 +116,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bff5c9ca0da58045a5884c40c360e1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114801236389035622
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1593972934433720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394eb62be89c3ad4cadf8e03c036c118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreMax: 0
+  scoreHalf: 0
+  scoreQuarter: 0
+  scoreMin: 0
+  maxPointsWaddle: {fileID: 1036979807116252, guid: e78bf5c36b3487a40af7ac258462df19,
+    type: 2}
+  halfPointsWaddle: {fileID: 1874786264883978, guid: bb7fc4dddec800d41bb4eb573b297764,
+    type: 2}
+  quarterPointsWaddle: {fileID: 1132325902405816, guid: e4585461a1d27f74b8f12e9e1548faa8,
+    type: 2}
+  minPointsWaddle: {fileID: 1391298316157008, guid: 0d8904f943426874cad99a411a9f8428,
+    type: 2}
 --- !u!212 &212563149257526288
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -146,7 +170,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d34c95c6b44418d4c8258534508440a7, type: 3}
   m_Color: {r: 0.6102941, g: 0.6102941, b: 0.6102941, a: 1}
   m_FlipX: 0

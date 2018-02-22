@@ -53,8 +53,13 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BackGridScript.cs" />
      <Compile Include="Assets\Scripts\BlockColorScript.cs" />
-     <Compile Include="Assets\Scripts\DestroyBlockScript.cs" />
+     <Compile Include="Assets\Scripts\ExtractCountScript.cs" />
      <Compile Include="Assets\Scripts\FrontGridScript.cs" />
+     <Compile Include="Assets\Scripts\ScanCountScript.cs" />
+     <Compile Include="Assets\Scripts\ScanScript.cs" />
+     <Compile Include="Assets\Scripts\ScorePointsScript.cs" />
+     <Compile Include="Assets\Scripts\SetPointsScript.cs" />
+     <Compile Include="Assets\Scripts\SwitchModeScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

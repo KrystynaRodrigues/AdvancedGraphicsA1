@@ -11,6 +11,11 @@ TagManager:
   - QuarterVal
   - MinVal
   - BlockSelect
+  - Toggle
+  - scoreMin
+  - scoreQuarter
+  - scoreHalf
+  - scoreMax
   layers:
   - Default
   - TransparentFX

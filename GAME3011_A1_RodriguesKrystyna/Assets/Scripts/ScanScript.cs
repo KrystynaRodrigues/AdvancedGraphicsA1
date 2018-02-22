@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyBlockScript : MonoBehaviour
+public class ScanScript : MonoBehaviour
 {
     Color mouseOverColor = Color.green;
 
@@ -20,12 +20,19 @@ public class DestroyBlockScript : MonoBehaviour
     }
 
     void OnTriggerStay2D(Collider2D collider)
-    { 
-
-        if (collider.tag == "Block" && Input.GetMouseButton(0))
+    {
+        if (GameObject.FindGameObjectWithTag("Toggle").GetComponent<SwitchModeScript>().scanModeOn)
         {
-            Destroy(gameObject);
+            if (collider.tag == "Block" && Input.GetMouseButton(0))
+            {
+                Destroy(gameObject);
+            }
         }
+        else if (GameObject.FindGameObjectWithTag("Toggle").GetComponent<SwitchModeScript>().scanModeOn == false)
+        {
+            GameObject.FindGameObjectWithTag("Toggle").GetComponent<SwitchModeScript>().extractModeOn = true;
+        }
+
     }
 
     void OnMouseOver()
